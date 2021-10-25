@@ -11,6 +11,8 @@ int main() {
             //--table;  deincrements the pointer to previous point in array
             //--filled;  deincrements the semaphore so we know one less piece of the table is filled
             //++empty;  increments the semaphore so we know one more piece of the table is empty
+            //for testing purposes we can have a cout statement telling us that the table was filled
+            //cout << "Producer has added an item to the table." << endl;
         }
         //++"iterator"/"overall";  increments our overarching semaphore so we can track how many times
         //the code has been run
