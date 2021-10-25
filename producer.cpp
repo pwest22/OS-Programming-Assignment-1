@@ -4,7 +4,7 @@
 int main() {
   //start by declaring shared memory, link the memory to the pointer of our array
   do {
-        if (//filled (our semaphore tracking how many spaces in the table are full) <= tableMax) {
+        if (//filled (our semaphore tracking how many spaces in the table are full) < tableMax) {
         //checks to see if any point in the table is empty or not, will stop once it produces the
         //maximum amount the table can hold
             //table (our pointer to our array) = 1;  an arbitrary value, does not really matter
