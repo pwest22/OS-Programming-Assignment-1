@@ -8,7 +8,7 @@ students that you were able to run Linux/Unix commands in Visual Studio Code, so
 IDE I tried since I was very familiar with Visual Studio from classes in the past. I installed minGW
 and followed the video tutorial you sent us to install the pthread library for VSCode. I tried to switch
 the compiler from the standard C++ compiler to minGW for Unix commands but something did not seem
-correct; nothing had visually changed, I was getting the occasional errors, and couldn't get anything
+correct; the terminal window had not changed, I was getting occasional errors, and couldn't get anything
 to compile. It was still fairly early on in the project so I decided to try VirtualBox and get Ubuntu.
 I was mildly familiar with VB, having successfully made an older Windows OS run many years ago, so I
 thought I could do it again. No matter what I tried, either making one fresh with the tools that VB
