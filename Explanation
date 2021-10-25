@@ -83,4 +83,7 @@ a little behind on notes in this class, which I want to catch-up on since I know
 coming up soon. If I am able to successfully complete the assignment, or at least to a certain extent
 am able to create code that partially executes the required function asked of this project, that code
 will be uploaded to my GitHub. Otherwise this file will be the only thing in this folder besides the
-README, which should lead you to this file.
+README, which should lead you to this file. UPDATE: Instead of re-typing this whole paragraph, I'm
+adding this footnote. I have included three pseudo-code files (producer.cpp, consumer.cpp, 
+producer-consumer.cpp) that I believe outlines the proper placement, declaration, and usage of
+code.
