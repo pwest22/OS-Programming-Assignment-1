@@ -4,6 +4,7 @@
 int main() {
   //start by declaring shared memory, link the memory to the pointer of our array
   do {
+        //locks the semaphores so only producer.cpp can access them
         if (//filled (our semaphore tracking how many spaces in the table are full) < tableMax) {
         //checks to see if any point in the table is empty or not, will stop once it produces the
         //maximum amount the table can hold
@@ -16,6 +17,7 @@ int main() {
         }
         //++"iterator"/"overall";  increments our overarching semaphore so we can track how many times
         //the code has been run
+        //unlock the semaphores since producer.cpp isnt currently using them
   } while (//"iterator"/"overall" is less than an arbitrary amount, for sake of testing; in a real OS,
     //it would do the code while "true", meaning it would continue forever until not needed anymore
   //finally delete/deallocate/unlink/remove the shared memory, will only execute this step once the
