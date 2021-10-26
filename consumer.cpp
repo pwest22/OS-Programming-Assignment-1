@@ -4,6 +4,7 @@
 int main() {
   //start by declaring shared memory, link the memory to the pointer of our array
   do {
+        //lock the semaphores so only consumer.cpp can access them
         if (//empty (our semaphore tracking how many spaces in the table are empty) = 0) {
         //checks to see if the table is no longer empty, meaning the consumer waits until the table is
         //completely full before it consumes
@@ -16,6 +17,7 @@ int main() {
         }
         //++"iterator"/"overall";  increments our overarching semaphore so we can track how many times
         //the code has been run
+        //unlock the semaphores since consumer.cpp isnt currently using them
   } while (//"iterator"/"overall" is less than an arbitrary amount, for sake of testing; in a real OS,
     //it would do the code while "true", meaning it would continue forever until not needed anymore
   //finally delete/deallocate/unlink/remove the shared memory; will only execute this step once the
