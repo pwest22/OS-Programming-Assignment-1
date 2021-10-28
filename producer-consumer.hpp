@@ -1,13 +1,13 @@
-//include the proper libraries
+#ifndef PRODUCER_CONSUMER_HPP
+#define PRODUCER_CONSUMER_HPP
 
-//since I wanted to do a dynamic array with a pointer, I would declare something like:
-int tableMax = 2;
+#include <semaphore.h>
+
+const int tableMax = 2;
 int *table = new int[tableMax];
-//then you would declare the semaphores, and I believe they would be declared here since both files would
-//use them?
-//first semaphore would be something like "iterator" or "overall", used to keep track of how many times
-//the table is accessed
-//second semaphore would be "filled", to keep track of how many spaces in the table are filled; would be
-//initialized to 0 since there are no items in the table
-//third semaphore would be "empty", to keep track of how many spaces in the table are empty; would be
-//initialized to 2 since the table is completely empty
+sem_t filled;
+sem_t empty;
+sem_t mutex;
+int non1 = sem_init(&filled, 1, 0);
+int non2 = sem_init(&empty, 1, 2);
+int non3 = sem_init(&mutex, 1, 1);
