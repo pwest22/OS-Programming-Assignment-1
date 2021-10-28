@@ -11,12 +11,9 @@ int main() {
         shmat(shmid, table, 0);
         int i = 0;
         do {
-                std::cout << "inside do loop" << std::endl;
                 sem_wait(&filled);
                 sem_wait(&mutex);
-                std::cout << "setting table to 0" << std::endl;
                 *table = 0;
-                std::cout << "deincrementing table" << std::endl;
                 --table;
                 std::cout << "Consumer has removed an item from the table." << std::endl;
                 ++i;
