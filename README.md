@@ -26,6 +26,7 @@ Producer has produced an item to the table.
 Consumer has consumed an item from the table.
 Consumer has consumed an item from the table.
 ```
+And should automatically end without any user interference.\
 However, this version of the code outputs this:
 ```
 Producer has produced an item to the table.
