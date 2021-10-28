@@ -17,7 +17,7 @@ int main() {
                 std::cout << "Producer has produced an item to the table." << std::endl;
                 sem_post(&mutex);
                 sem_post(&filled);
-        } while (i < 10);
+        } while (i < 8);
 int non1 = shmdt(table);
 int non2 = sem_destroy(&filled);
 int non3 = sem_destroy(&empty);
