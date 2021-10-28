@@ -19,7 +19,7 @@ int main() {
                 ++i;
                 sem_post(&mutex);
                 sem_post(&empty);
-        } while (i < 8);
+        } while (i < 6);
 int non1 = shmdt(table);
 int non2 = sem_destroy(&filled);
 int non3 = sem_destroy(&empty);
